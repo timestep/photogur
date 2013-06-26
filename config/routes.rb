@@ -9,6 +9,7 @@ Photogur::Application.routes.draw do
   get 'pictures/new' => 'pictures#new' # this is also a new line of code
   get 'pictures/:id' => 'pictures#show'
 
+  get 'pictures/:id/edit' => "pictures#edit", as: "edit_picture"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
