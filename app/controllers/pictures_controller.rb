@@ -1,6 +1,6 @@
 class PicturesController < ApplicationController
 
-	def index
+	def show
 		@pictures = [
 			{
 				:title => "Old McDonalds",
@@ -18,8 +18,16 @@ class PicturesController < ApplicationController
 				:url => 'http://i.imgur.com/HiX0dTL.jpg'
 			}
 		]	
+		@picture = @pictures[params[:id].to_i]
+
+	end
+	
+	def new
 	end
 
-	@pictures = @pictures[params[:id].to_i]
+	def create
+		render :text => 'Saving a picture. URL: #{params[:url]}, Title: #{params[:title]}, Artist: #{params[:artist]}'
+	end
+
 
 end
