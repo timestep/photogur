@@ -1,21 +1,28 @@
 <h1>Add a picture</h1>
-<%= link_to "Back to Pictures", pictures_url, class: "btn btn-warning" %>
+<br>
 <div class="form-horizontal well">
 <%= form_for @picture do |f| %>
   <p>
-    <%= f.label "artist" %><br>
-    <%= f.text_field "artist" %>
-  </p>
-  <p>
-    <%= f.label "title" %><br>
+    <%= f.label "title" %>
     <%= f.text_field "title" %>
   </p>
   <p>
-    <%= f.label "url" %><br>
+    <%= f.label "artist" %>
+    <%= f.text_field "artist" %>
+  </p>
+  <p>
+    <%= f.label "url" %>
     <%= f.text_field "url" %>
   </p>
   <p>
+    <div class="row">
+      <div class="span">
     <%= submit_tag 'Save' , :class=> 'btn btn-success'%>
+    </div>
+    <div class="offset3">
+    <%= link_to "Back to Pictures", pictures_url, class: "btn btn-warning" %>
+    </div>
+    </div>
   </p>
 <% end %>
 </div>

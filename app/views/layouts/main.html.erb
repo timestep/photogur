@@ -13,9 +13,12 @@
     <header class="navbar navbar-fixed-top navbar">
       <div class="navbar-inner">
         <div class="container">
-          	<%= link_to "smakT", '#', class: "brand" %> 
+        	<div class="row-fluid show-grid">
+          	<%= link_to "smakT", '/', class: "brand" %> 
+          	<div class="offset10">
 			<%= link_to "<button class='btn btn-success'>New Picture</button>".html_safe, "/pictures/new" %>
-			<%= @pictures.length %> pictures
+			</div>
+			</div>
         </div>
       </div>
     </header>

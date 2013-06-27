@@ -1,10 +1,15 @@
-
-<h1>smakT <%= link_to "<button class='btn btn-success btn-large'>New Picture</button>".html_safe, "/pictures/new" %> </h1>
-<h2></h2>
-
-
-
-<% @pictures.each do |picture| %>
-  <p><%= picture[:title] %>, <%= picture[:artist] %></p>
-  <%= link_to image_tag(picture.url), "/pictures/#{picture.id}" %>
-<% end %>
+<!-- <div class="row">
+	<div class="span offset5">
+		<h2>
+			<%= @pictures.length %> pictures
+		</h2>
+	</div>
+</div> -->
+<div class="row">
+	<div class="span">
+		<% @pictures.each do |picture| %>
+		  <p><%= picture[:title] %> by <%= picture[:artist] %></p>
+		  <%= link_to image_tag(picture.url), "/pictures/#{picture.id}" %>
+		<% end %>
+	</div>
+</div>
