@@ -7315,3 +7315,66 @@ Served asset /jquery.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-27 10:40:06 -0400
 Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/pictures/2" for 127.0.0.1 at 2013-06-27 10:52:38 -0400
+Processing by PicturesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPicture Load (0.2ms)[0m  SELECT "pictures".* FROM "pictures" WHERE "pictures"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered pictures/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 9ms (Views: 5.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-27 10:52:38 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-27 10:52:38 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-27 10:52:38 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-27 10:52:38 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/pictures/2/edit" for 127.0.0.1 at 2013-06-27 10:52:41 -0400
+Processing by PicturesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPicture Load (0.2ms)[0m  [1mSELECT "pictures".* FROM "pictures" WHERE "pictures"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered pictures/edit.html.erb within layouts/application (46.2ms)
+Completed 200 OK in 81ms (Views: 78.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-27 10:52:41 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-27 10:52:41 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-27 10:52:41 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-27 10:52:41 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/pictures/1" for 127.0.0.1 at 2013-06-27 11:15:08 -0400
+Processing by PicturesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPicture Load (0.2ms)[0m  SELECT "pictures".* FROM "pictures" WHERE "pictures"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Picture with id=1):
+  app/controllers/pictures_controller.rb:8:in `show'
+
+
+  Rendered /home/kevin/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /home/kevin/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/kevin/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.6ms)

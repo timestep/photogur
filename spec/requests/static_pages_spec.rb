@@ -7,7 +7,14 @@ describe "index page"
 	it 'should visit the index page' do
 		visit '/index'
 		visit '/'
-		# response.should be_successful
+	end
+end
+
+describe 'show page' do
+	it 'should show a picture' do
+		
+		visit '/show/2'
+		visit '/show/1'
 	end
 end
 
@@ -32,12 +39,7 @@ describe 'new page' do
 	end
 end
 
-describe 'show page' do
-	it 'should show a picture' do
-		visit '/show/2'
-		visit '/show/1'
-	end
-end
+
 
 describe 'deletion' do
 	it 'should delete a picture' do
