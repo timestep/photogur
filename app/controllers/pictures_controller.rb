@@ -1,5 +1,7 @@
 class PicturesController < ApplicationController
 
+	layout "main"
+
 	def index
 		@pictures = Picture.all
 	end

@@ -1,6 +1,6 @@
 <h1>Add a picture</h1>
-<%= link_to "Back to Pictures", pictures_url %>
-
+<%= link_to "Back to Pictures", pictures_url, class: "btn btn-warning" %>
+<div class="form-horizontal well">
 <%= form_for @picture do |f| %>
   <p>
     <%= f.label "artist" %><br>
@@ -15,6 +15,7 @@
     <%= f.text_field "url" %>
   </p>
   <p>
-    <%= submit_tag "Save" %>
+    <%= submit_tag 'Save' , :class=> 'btn btn-success'%>
   </p>
 <% end %>
+</div>
