@@ -12723,3 +12723,160 @@ Served asset /jquery.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-27 13:56:50 -0400
 Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/pictures/14" for 127.0.0.1 at 2013-06-27 13:58:55 -0400
+Processing by PicturesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mPicture Load (0.1ms)[0m  SELECT "pictures".* FROM "pictures" WHERE "pictures"."id" = ? LIMIT 1  [["id", "14"]]
+  Rendered pictures/show.html.erb within layouts/main (0.8ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-27 13:58:55 -0400
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-27 13:58:55 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-27 13:58:55 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-27 13:58:55 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/pictures/14/edit" for 127.0.0.1 at 2013-06-27 13:59:00 -0400
+Processing by PicturesController#edit as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mPicture Load (0.1ms)[0m  [1mSELECT "pictures".* FROM "pictures" WHERE "pictures"."id" = ? LIMIT 1[0m  [["id", "14"]]
+  Rendered pictures/edit.html.erb within layouts/main (1.8ms)
+Completed 200 OK in 7ms (Views: 4.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-27 13:59:00 -0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-27 13:59:00 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-27 13:59:00 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-27 13:59:00 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started PUT "/pictures/14" for 127.0.0.1 at 2013-06-27 13:59:02 -0400
+Processing by PicturesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PtO+ZlTAbiqP3M1EyJ2PEAk9ySHF+b8MFkVlr7W6HNQ=", "picture"=>{"artist"=>"Holy", "title"=>"Clean Water", "url"=>"http://i.imgur.com/O49WZVm.jpg"}, "commit"=>"Save", "id"=>"14"}
+  [1m[35mPicture Load (0.1ms)[0m  SELECT "pictures".* FROM "pictures" WHERE "pictures"."id" = ? LIMIT 1  [["id", "14"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/pictures/14
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/pictures/14" for 127.0.0.1 at 2013-06-27 13:59:02 -0400
+Processing by PicturesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mPicture Load (0.1ms)[0m  [1mSELECT "pictures".* FROM "pictures" WHERE "pictures"."id" = ? LIMIT 1[0m  [["id", "14"]]
+  Rendered pictures/show.html.erb within layouts/main (0.9ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-27 13:59:02 -0400
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-27 13:59:02 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-27 13:59:02 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-27 13:59:02 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-27 13:59:03 -0400
+Processing by PicturesController#index as HTML
+  [1m[35mPicture Load (0.3ms)[0m  SELECT "pictures".* FROM "pictures" 
+  Rendered pictures/index.html.erb within layouts/main (1.0ms)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-27 13:59:03 -0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-27 13:59:03 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-27 13:59:03 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-27 13:59:03 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/pictures/14" for 127.0.0.1 at 2013-06-27 13:59:05 -0400
+Processing by PicturesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mPicture Load (0.2ms)[0m  [1mSELECT "pictures".* FROM "pictures" WHERE "pictures"."id" = ? LIMIT 1[0m  [["id", "14"]]
+  Rendered pictures/show.html.erb within layouts/main (0.7ms)
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-27 13:59:05 -0400
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-27 13:59:05 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-27 13:59:05 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-27 13:59:05 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-27 13:59:13 -0400
+Processing by PicturesController#index as HTML
+  [1m[35mPicture Load (0.3ms)[0m  SELECT "pictures".* FROM "pictures" 
+  Rendered pictures/index.html.erb within layouts/main (0.9ms)
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-27 13:59:13 -0400
+Served asset /application.css - 304 Not Modified (37ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-27 13:59:13 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-27 13:59:13 -0400
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-27 13:59:13 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+Connecting to database specified by database.yml
+  [1m[36m (1.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreatePictures (20130626165225)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
