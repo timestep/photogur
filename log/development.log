@@ -12880,3 +12880,51 @@ Connecting to database specified by database.yml
 Migrating to CreatePictures (20130626165225)
   [1m[35m (0.1ms)[0m  select sqlite_version(*)
   [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+
+
+Started GET "/pictures/14" for 127.0.0.1 at 2013-06-27 14:05:32 -0400
+Processing by PicturesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mPicture Load (0.1ms)[0m  [1mSELECT "pictures".* FROM "pictures" WHERE "pictures"."id" = ? LIMIT 1[0m  [["id", "14"]]
+  Rendered pictures/show.html.erb within layouts/main (1.8ms)
+Completed 200 OK in 12ms (Views: 5.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-27 14:05:32 -0400
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-27 14:05:32 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-27 14:05:32 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-27 14:05:32 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/pictures/14/edit" for 127.0.0.1 at 2013-06-27 14:05:36 -0400
+Processing by PicturesController#edit as HTML
+  Parameters: {"id"=>"14"}
+  [1m[35mPicture Load (0.1ms)[0m  SELECT "pictures".* FROM "pictures" WHERE "pictures"."id" = ? LIMIT 1  [["id", "14"]]
+  Rendered pictures/edit.html.erb within layouts/main (2.2ms)
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-27 14:05:36 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-27 14:05:36 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-27 14:05:36 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-27 14:05:36 -0400
+Served asset /application.js - 304 Not Modified (1ms)
